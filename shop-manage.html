@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop Manager</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="content-shop-manage">
+		<div class="wrap">
+			<div class="col75 sm-margin-right">
+				<div class="breadcrumb">
+					<p>Home / Product / Add Product</p>
+				</div>
+				<div class="add-product">
+					<h3>Add Product</h3>
+					<div class="input-name-product">
+						<input type="text" name="name-product" placeholder="Enter Name Product">	
+					</div>
+					<div class="des">
+						<label>Description</label><br><br>
+						<textarea rows="10" cols="50"></textarea>
+					</div>
+					<div class="type-product">
+						<label>Type Product</label>
+						<select name="typepr" id="typepr">
+						  <option value="pr1">Product 1</option>
+						  <option value="pr2">Product 2</option>
+						  <option value="pr3">Product 3</option>
+						  <option value="pr4">Product 4</option>
+						</select>
+					</div>
+					<div class="price">
+						<label>Price: </label>
+						<input type="text" name="price">
+					</div>
+					<div class="status">
+						<label>Status</label>
+						<select name="Status" id="Status">
+						  <option value="pr1">In stock</option>
+						  <option value="pr3">Out of product</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col25">
+				<div class="categorise">
+					<h3>Categorise Product</h3>
+					<form action="/action_page.php">
+					  <input type="checkbox" id="product1" name="product1" value="product1">
+					  <label for="product1"> Product 1</label><br>
+					  <input type="checkbox" id="product2" name="product2" value="product2">
+					  <label for="product2"> Product 2</label><br>
+					  <input type="checkbox" id="product3" name="product3" value="product3">
+					  <label for="product3"> Product 3</label><br><br>
+					</form>
+				</div>
+				<div class="feature-image">
+					<h3>Feature Image</h3>
+					<label for="prMedia">Add media:</label><br>
+					<input type="file" id="prMedia" name="prMedia">
+				</div>
+				<div class="gallery-image">
+					<h3>Gallery Image</h3>
+					<label for="prMedia">Add gallery media:</label><br>
+					<input type="file" id="prMedia" name="prMedia">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
